@@ -24,12 +24,12 @@ const getRandomJoke = () => {
     });
 }
 
-
 //create working button to retrieve joke
 $('#get-joke').on('click', getRandomJoke())
 
 // function render(data) {
-//     p
+//     $p.text(jokeSetup)
+//     $p.text(jokePunchline)
 // }
 
 
