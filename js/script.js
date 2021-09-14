@@ -3,7 +3,7 @@ console.log(key)
 
 /////functional part of page
 
-const $p = $('#p');
+const $joke = $('#joke');
 
 const getRandomJoke = () => {
 //connect api with AJAX
@@ -18,21 +18,23 @@ const getRandomJoke = () => {
     }).then(
         (data) => {
         console.log(data);
-        // render();
-        const jokeSetup = (data.body[0].setup);
-        const jokePunchline = (data.body[0].punchline)
+        //get joke setup
+        render(data);
+        //allow user to click punchline button
+        $('#get-punchline').on('click', getPunchline(data))
     });
 }
+//joke setup function
+function render(data) {
+    $joke.text(`Dad says: ${data.body[0].setup}`)
+}
 
+//retrieving punchline
+function getPunchline(data) {
+    $joke.text(`${data.body[0].punchline}`);
+}
 //create working button to retrieve joke
-$('#get-joke').on('click', getRandomJoke())
-
-// function render(data) {
-//     $p.text(jokeSetup)
-//     $p.text(jokePunchline)
-// }
-
-
+$('#get-joke').on('click', getRandomJoke());
 
 /////styling part of page
 

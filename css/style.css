@@ -1,0 +1,22 @@
+* {
+    background-color: yellow;
+}
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 80px;
+    border: rgb(235, 137, 10);
+}
+
+h2 {
+    font-size: 60px;
+}
+
+div {
+    background-color: rgb(235, 137, 10);
+    font-size: 20px;
+}
+
