@@ -1,15 +1,20 @@
 * {
-    background-color: yellow;
+    cursor: url("https://img.icons8.com/offices/30/000000/corn.png"), auto;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    /* background-color: yellow; */
 }
 body {
-    cursor: url("https://img.icons8.com/offices/30/000000/corn.png"), auto;
     text-align: center;
 }
 
 h1 {
     font-family: fantasy;
-    font-size: 80px;
-    border: rgb(235, 137, 10);
+    font-size: 90px;
+    border: 10px solid black;
+    margin-top: -10px;
+    text-shadow: 5px 5px 0 yellow;
 }
 
 h2 {
@@ -17,8 +22,27 @@ h2 {
 }
 
 div {
-    background-color: black;
+    /* background-color: black; */
     font-size: 20px;
 }
+#page{
+    margin-top: -15px;
+}
 
+button {
+    font-size: larger;
+    color: black;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+p {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.corn {
+    margin-top: -100px;
+}
 

@@ -21,6 +21,7 @@ const getRandomJoke = () => {
         (data) => {
         console.log(data);
         setBg();
+        $punchline.text('');
         const jokeSetup = (data.body[0].setup);
         const jokePunchline = (data.body[0].punchline)
         $joke.text(`Dad says: ${jokeSetup}`);
@@ -40,7 +41,7 @@ $('#get-joke').click(()=> getRandomJoke())
 const setBg = () => {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = "#" + randomColor;
-    $('div').innerHTML = "#" + randomColor;
+    $('body').innerHTML = "#" + randomColor;
 }
     
 /////// working as two separate buttons
