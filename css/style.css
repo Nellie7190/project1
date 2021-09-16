@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
 * {
     cursor: url("https://img.icons8.com/offices/30/000000/corn.png"), auto;
     -webkit-text-stroke-width: 2px;
@@ -19,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 60px;
+    color: yellow;
 }
 
 div {
@@ -36,13 +39,18 @@ button {
     margin: 10px;
     padding: 5px;
 }
+button:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+ }
+
 p {
+    color: yellow;
     font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
 }
 
 .corn {
-    margin-top: -100px;
+    height: 200px;
 }
-

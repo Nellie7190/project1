@@ -1,3 +1,4 @@
+//hidden key
 const key = config.SECRET_API_KEY;
 console.log(key)
 
@@ -24,7 +25,6 @@ const body = [
 const getRandomJoke = () => {
     setBg();
     const jokeSetup = (body[0].setup);
- //add/fix in script.js ========================================   
     $joke.text(`Dad says: ${jokeSetup}`);  
     $('#get-punchline').click(()=> getRandomPunchline())
 
