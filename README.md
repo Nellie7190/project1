@@ -11,5 +11,4 @@ Corny Dad jokes delivered by Setup and Punchline
 
 ## Wireframe:
 
-![Dad Jokes wireframe](image/Screen Shot 2021-09-19 at 3.19.20 PM.png)
-
+![DadJokesWireframe](image/Screen Shot 2021-09-19 at 3.19.20 PM.png)
