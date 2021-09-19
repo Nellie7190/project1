@@ -1,8 +1,12 @@
 //hidden key
 const key = config.SECRET_API_KEY;
-console.log(key)
+const body = document.querySelector('body')
 
 /////functional part of page====================================
+
+// new JSConfetti() creates HTML 'Canvas element and adds it to page
+const jsConfetti = new JSConfetti()
+
 const $joke = $('#joke');
 const $getJoke = $('#get-joke');
 const $punchline = $('#punchline')
@@ -34,18 +38,23 @@ const getRandomJoke = () => {
         $('#get-punchline').click(()=> getRandomPunchline(jokePunchline))
     });
 }
+
 const getRandomPunchline = (jokePunchline) => {
     $getPunchline.hide(10);
+    jsConfetti.addConfetti({
+        emojis: ['🌈', '💥', '✨', '💫', '🌸'],
+     })
     $punchline.text(`${jokePunchline}`);
 }
  
 // create button to retrieve joke
-$('#get-joke').click(()=> getRandomJoke())
+$getJoke.click(()=> getRandomJoke())
     
 /////styling part of page================================================
 //random backgroundcolor when clicking get joke button
 const setBg = () => {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor;
-    $('body').innerHTML = "#" + randomColor;
+    body.style.backgroundColor = "#" + randomColor;
+    $(body).innerHTML = "#" + randomColor;
 }
+
