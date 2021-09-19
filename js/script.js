@@ -1,6 +1,5 @@
 //hidden key
-//
-const key = config.SECRET_API_KEY;
+//const key = config.SECRET_API_KEY;
 const body = document.querySelector('body')
 
 /////functional part of page====================================
