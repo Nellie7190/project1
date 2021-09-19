@@ -12,7 +12,7 @@ Corny Dad jokes delivered by Setup and Punchline
 ## Wireframe:
 
 <<<<<<< HEAD
-![DadJokesWireframe](image/Screen Shot%202021-09-19%20at%203.19.20%20PM.png)
+![DadJokesWireframe](image/Screen%20Shot%202021-09-19%20at%203.19.20%20PM.png)
 
 
 ## App Images:
