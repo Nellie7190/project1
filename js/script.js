@@ -1,4 +1,5 @@
 //hidden key
+//
 const key = config.SECRET_API_KEY;
 const body = document.querySelector('body')
 
@@ -22,7 +23,7 @@ const getRandomJoke = () => {
         url: 'https://dad-jokes.p.rapidapi.com/random/joke',
         headers: {
             'x-rapidapi-host': 'dad-jokes.p.rapidapi.com',
-            'x-rapidapi-key': key
+            'x-rapidapi-key': '63b67dab61mshaf038c83620fbbap18d5fcjsn26a8929d12f6'
         },
         
     }).then(
