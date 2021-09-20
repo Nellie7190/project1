@@ -22,7 +22,7 @@ const getRandomJoke = () => {
         url: 'https://dad-jokes.p.rapidapi.com/random/joke',
         headers: {
             'x-rapidapi-host': 'dad-jokes.p.rapidapi.com',
-            'x-rapidapi-key': '63b67dab61mshaf038c83620fbbap18d5fcjsn26a8929d12f6'
+            'x-rapidapi-key': 'c21cabdf18mshc4edff357c90089p1c7fecjsnfb9bd283fbaf'
         },
         
     }).then(
